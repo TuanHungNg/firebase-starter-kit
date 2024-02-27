@@ -1,19 +1,17 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 
-// Config copy từ Firebase Console
 const firebaseConfig = {
-    apiKey: "AIzaSyAydqGt2q6IpEQFSkqCflJAYjZEUJNt5gQ",
-    authDomain: "jsi03-46706.firebaseapp.com",
-    projectId: "jsi03-46706",
-    storageBucket: "jsi03-46706.appspot.com",
-    messagingSenderId: "967629567676",
-    appId: "1:967629567676:web:dc6b3d069fed42ec8182b9",
+  apiKey: "AIzaSyD4EKPYpJ1fwwVdmlqSG3mksKQhtE918ao",
+  authDomain: "authordomain-5cfc3.firebaseapp.com",
+  projectId: "authordomain-5cfc3",
+  storageBucket: "authordomain-5cfc3.appspot.com",
+  messagingSenderId: "734127317073",
+  appId: "1:734127317073:web:46902cd540b70d29d2d870",
 };
 
-// Khởi tạo ứng dụng với config đã cung cấp bên trên
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-// Khởi tạo auth
 const auth = getAuth(app);
 
 export { auth };

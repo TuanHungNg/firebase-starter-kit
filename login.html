@@ -71,16 +71,13 @@
 
         <!-- Để swur dụng import/export thì script phải có type là module -->
         <script type="module">
-            import {
-                signInWithPopup, // Đăng nhập bằng popup
-                GoogleAuthProvider, // Cung cấp thông tin đăng nhập bằng Google
-            } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
             import { auth } from "./firebase.js";
+            import { GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 
             const provider = new GoogleAuthProvider();
-            document
-                .getElementById("google-sign-in")
-                .addEventListener("click", () => {
+            const googlesignin = document.getElementById("google-sign-in")
+            console.log(googlesignin)
+            googlesignin.addEventListener("click", () => {
                     signInWithPopup(auth, provider)
                         .then((result) => {
                             // This gives you a Google Access Token. You can use it to access the Google API.
